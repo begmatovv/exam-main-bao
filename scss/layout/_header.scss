@@ -4,9 +4,10 @@
     url(../../images/png/oval-on-hero.png);
   background-repeat: no-repeat;
   background-size: 530px 129px, 129px;
-  background-position: top 130px left -10rem, bottom 60px right 600px;
+  background-position: top 130px left -10rem, bottom 1rem right 600px;
   margin-bottom: 20rem;
 }
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -14,10 +15,21 @@
   padding-top: 4rem;
   margin-bottom: 12.7rem;
 }
+svg{
+  width: 24px;
+  height: 24px; 
+  path:hover{
+    fill: $blue;
+  }
+}
 .header__top__nav {
   display: flex;
   gap: 3.2rem;
   z-index: 100;
+  .header__top__item {
+    .header__top__link {
+    }
+  }
 }
 .hero {
   .hero__heading {

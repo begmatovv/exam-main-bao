@@ -409,7 +409,7 @@ body {
   background-image: url(../../images/png/oval-bg.png), url(../../images/png/oval-on-hero.png);
   background-repeat: no-repeat;
   background-size: 530px 129px, 129px;
-  background-position: top 130px left -10rem, bottom 60px right 600px;
+  background-position: top 130px left -10rem, bottom 1rem right 600px;
   margin-bottom: 20rem;
 }
 
@@ -421,12 +421,19 @@ body {
   margin-bottom: 12.7rem;
 }
 
+svg {
+  width: 24px;
+  height: 24px;
+}
+svg path:hover {
+  fill: #4ee1a0;
+}
+
 .header__top__nav {
   display: flex;
   gap: 3.2rem;
   z-index: 100;
 }
-
 .hero .hero__heading {
   font-weight: 700;
   letter-spacing: -2.5px;
