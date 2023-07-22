@@ -434,6 +434,9 @@ body {
   line-height: 1;
   margin-bottom: 4.3rem;
 }
+.hero .hero__heading .table-br-first {
+  display: none;
+}
 .hero .hero__heading .table-br {
   display: none;
 }
