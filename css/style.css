@@ -412,13 +412,49 @@ body {
   background-position: top 130px left -10rem, bottom 1rem right 600px;
   margin-bottom: 20rem;
 }
-
-.header__top {
+.header .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 4rem;
   margin-bottom: 12.7rem;
+}
+.header .header__top .header__top__nav {
+  display: flex;
+  gap: 3.2rem;
+  z-index: 100;
+}
+.header .hero .hero__heading {
+  font-weight: 700;
+  letter-spacing: -2.5px;
+  font-size: 8rem;
+  line-height: 1;
+  margin-bottom: 4.3rem;
+}
+.header .hero .hero__heading .table-br-first {
+  display: none;
+}
+.header .hero .hero__heading .table-br {
+  display: none;
+}
+.header .hero .hero__heading .hero__heading-name {
+  border-bottom: 5px solid #4ee1a0;
+}
+.header .hero .hero__text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 500;
+  letter-spacing: 0px;
+  width: 445px;
+  margin-bottom: 6.6rem;
+}
+.header .hero__img {
+  z-index: -1;
+  position: absolute;
+  padding-top: 15rem;
+  top: 0;
+  right: 22rem;
+  background-color: #242424;
 }
 
 svg {
@@ -429,45 +465,6 @@ svg path:hover {
   fill: #4ee1a0;
 }
 
-.header__top__nav {
-  display: flex;
-  gap: 3.2rem;
-  z-index: 100;
-}
-.hero .hero__heading {
-  font-weight: 700;
-  letter-spacing: -2.5px;
-  font-size: 8rem;
-  line-height: 1;
-  margin-bottom: 4.3rem;
-}
-.hero .hero__heading .table-br-first {
-  display: none;
-}
-.hero .hero__heading .table-br {
-  display: none;
-}
-.hero .hero__heading .hero__heading-name {
-  border-bottom: 5px solid #4ee1a0;
-}
-.hero .hero__text {
-  font-size: 1.8rem;
-  line-height: 1.6;
-  font-weight: 500;
-  letter-spacing: 0px;
-  width: 445px;
-  margin-bottom: 6.6rem;
-}
-
-.hero__img {
-  z-index: -1;
-  position: absolute;
-  padding-top: 15rem;
-  top: 0;
-  right: 22rem;
-  background-color: #242424;
-}
-
 @media only screen and (max-width: 812px) {
   .container {
     max-width: 807px;
@@ -476,32 +473,32 @@ svg path:hover {
   .header {
     background-position: left -26.5rem top 16rem, bottom 6rem right -7rem;
   }
-  .header__top {
+  .header .header__top {
     max-width: 807px;
   }
-  .hero .hero__heading {
+  .header .hero .hero__heading {
     width: 100%;
     max-width: 445px;
     font-size: 7.2rem;
     letter-spacing: -2px;
   }
-  .hero .hero__heading .table-br {
+  .header .hero .hero__heading .table-br {
     display: block;
   }
-  .hero .hero__heading .table-br-first {
+  .header .hero .hero__heading .table-br-first {
     display: block;
   }
-  .hero .hero__heading .desktop-br {
+  .header .hero .hero__heading .desktop-br {
     display: none;
   }
-  .hero__img {
+  .header .hero__img {
     width: 100%;
     max-width: 350px;
     height: 600px;
     background-color: #242424;
     right: 0;
   }
-  .hero__img img {
+  .header .hero__img img {
     max-width: 350px;
     height: 486px;
   }
@@ -517,19 +514,19 @@ svg path:hover {
     z-index: -1;
     background-position: left -34.2rem top 12rem, bottom 13rem right -7rem;
   }
-  .header__top {
+  .header .header__top {
     flex-direction: column;
     gap: 2rem;
     padding-top: 2rem;
   }
-  .header__top__nav {
+  .header .header__top .header__top__nav {
     gap: 2.5rem;
   }
-  .header__top__link img {
+  .header .header__top .header__top__nav .header__top__link svg {
     width: 19.6px;
     height: 19.2px;
   }
-  .hero {
+  .header .hero {
     position: relative;
     top: 15rem;
     display: flex;
@@ -540,7 +537,7 @@ svg path:hover {
     max-width: 343px;
     height: 244px;
   }
-  .hero .hero__heading {
+  .header .hero .hero__heading {
     width: 100%;
     font-size: 3rem;
     line-height: 1;
@@ -548,16 +545,16 @@ svg path:hover {
     text-align: center;
     margin-bottom: 2.4rem;
   }
-  .hero .hero__heading .table-br {
+  .header .hero .hero__heading .table-br {
     display: none;
   }
-  .hero .hero__heading .table-br-first {
+  .header .hero .hero__heading .table-br-first {
     display: none;
   }
-  .hero .hero__heading .desktop-br {
+  .header .hero .hero__heading .desktop-br {
     display: none;
   }
-  .hero .hero__text {
+  .header .hero .hero__text {
     width: 100%;
     font-size: 1.3rem;
     line-height: 1.6;
@@ -565,17 +562,17 @@ svg path:hover {
     text-align: center;
     margin-bottom: 2.4rem;
   }
-  .hero .btn {
+  .header .hero .btn {
     max-width: 120px;
   }
-  .hero__img {
+  .header .hero__img {
     width: 100%;
     max-width: 174px;
     right: 6.6rem;
     height: 383px;
     background-color: rgba(217, 217, 217, 0.1);
   }
-  .hero__img img {
+  .header .hero__img img {
     max-width: 174px;
     height: 242px;
   }
@@ -587,40 +584,39 @@ svg path:hover {
   background-repeat: no-repeat;
   background-position: center left -20.5rem;
 }
-
-.form {
+.footer .form {
   display: flex;
   justify-content: space-between;
   margin-bottom: 9rem;
 }
-.form .form__content h2 {
+.footer .form .form__content h2 {
   font-size: 8rem;
   line-height: 1;
   letter-spacing: -2.5px;
   text-align: left;
   margin-bottom: 3.8rem;
 }
-.form .form__content p {
+.footer .form .form__content p {
   font-size: 1.8rem;
   line-height: 1.6;
   letter-spacing: 0px;
   text-align: left;
   max-width: 445px;
 }
-.form form {
+.footer .form form {
   display: flex;
   flex-direction: column;
   max-width: 445px;
 }
-.form form label {
+.footer .form form label {
   text-align: right;
 }
-.form form input {
+.footer .form form input {
   background-color: transparent;
   border: 0;
 }
-.form form #name,
-.form form #email {
+.footer .form form #name,
+.footer .form form #email {
   max-width: 445px;
   height: 43px;
   margin-bottom: 3.2rem;
@@ -632,7 +628,7 @@ svg path:hover {
   letter-spacing: -0.2px;
   text-align: left;
 }
-.form form #textm {
+.footer .form form #textm {
   max-width: 445px;
   padding-left: 2.4rem;
   padding-right: 28rem;
@@ -645,7 +641,7 @@ svg path:hover {
   letter-spacing: -0.2px;
   text-align: left;
 }
-.form form .footer-btn {
+.footer .form form .footer-btn {
   position: relative;
   left: 28.5rem;
   max-width: 144px;
@@ -654,8 +650,7 @@ svg path:hover {
   border: 0;
   border-bottom: 2px solid #4ee1a0;
 }
-
-.footer__top {
+.footer .footer__top {
   border-top: 1px solid #ffffff;
   padding-top: 4.7rem;
   display: flex;
@@ -663,8 +658,7 @@ svg path:hover {
   align-items: center;
   margin-bottom: 12.7rem;
 }
-
-.footer__top__nav {
+.footer .footer__top .footer__top__nav {
   display: flex;
   gap: 3.2rem;
   z-index: 100;
@@ -678,29 +672,29 @@ svg path:hover {
   .footer {
     background-position: bottom 23rem left -36.8rem;
   }
-  .form {
+  .footer .form {
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-  .form .form__content {
+  .footer .form .form__content {
     text-align: center;
     margin-bottom: 4.8rem;
   }
-  .form .form__content h2 {
+  .footer .form .form__content h2 {
     margin-bottom: 2rem;
     font-size: 7.2rem;
     line-height: 1;
     letter-spacing: -2px;
     text-align: center;
   }
-  .form .form__content p {
+  .footer .form .form__content p {
     text-align: center;
   }
-  .form form {
+  .footer .form form {
     margin-bottom: 9rem;
   }
-  .footer__top {
+  .footer .footer__top {
     max-width: 807px;
   }
 }
@@ -708,31 +702,31 @@ svg path:hover {
   .footer {
     background-position: top 45rem left -34.3rem;
   }
-  .container {
+  .footer .container {
     padding-left: 1.6rem;
     padding-right: 1.6rem;
     max-width: 343px;
   }
-  .form {
+  .footer .form {
     padding-left: 0;
   }
-  .form .form__content {
+  .footer .form .form__content {
     text-align: center;
     max-width: 343px;
     height: 138px;
     margin-bottom: 5rem;
   }
-  .form .form__content h2 {
+  .footer .form .form__content h2 {
     font-size: 3rem;
     letter-spacing: -1.1px;
   }
-  .form .form__content p {
+  .footer .form .form__content p {
     max-width: 300px;
     font-size: 1.3rem;
     letter-spacing: 0px;
   }
-  .form form #name,
-  .form form #email {
+  .footer .form form #name,
+  .footer .form form #email {
     max-width: 343px;
     padding-left: 2.4rem;
     padding-right: 4rem;
@@ -740,22 +734,22 @@ svg path:hover {
     margin-bottom: 3.2rem;
     border-bottom: 1px solid #ffffff;
   }
-  .form form #textm {
+  .footer .form form #textm {
     max-width: 343px;
     padding-right: 4rem;
     border-bottom: 1px solid #ffffff;
     margin-bottom: 3.2rem;
     color: #ffffff;
   }
-  .form form .footer-btn {
+  .footer .form form .footer-btn {
     left: 15rem;
   }
-  .footer__top {
+  .footer .footer__top {
     flex-direction: column;
     gap: 2rem;
     padding-top: 2rem;
   }
-  .footer__top__nav {
+  .footer .footer__top .footer__top__nav {
     gap: 2.5rem;
   }
 }
