@@ -1,0 +1,16 @@
+.btn {
+  font-size: $h4-fz;
+  font-weight: 700;
+  line-height: $h4-lh;
+  letter-spacing: 2.3px;
+  text-align: left;
+  color: $white;
+  border-bottom: 2px solid $blue;
+  transition: 0.3s ease;
+}
+.btn:hover{
+    color: $blue;
+}   
+.btn:active{
+    color: $blue;
+}
