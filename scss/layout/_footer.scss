@@ -122,6 +122,63 @@
     }
   }
 }
+@media only screen and (max-width: 400px) {
+  .footer {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      max-width: 380px;
+    }
+    background-position: top 45rem left -34.3rem;
+    .form {
+      padding-left: 0;
+      .form__content {
+        text-align: center;
+        h2 {
+          font-size: $h1-fz-sm;
+          letter-spacing: -1.1px;
+        }
+        p {
+          max-width: 380px;
+          font-size: $body-fz-sm;
+          letter-spacing: 0px;
+        }
+        max-width: 380px;
+        height: 138px;
+        margin-bottom: 5rem;
+      }
+      form {
+        #name,
+        #email {
+          max-width: 380px;
+          padding-left: 2.4rem;
+          padding-right: 4rem;
+          height: 43px;
+          margin-bottom: 3.2rem;
+          border-bottom: 1px solid $white;
+        }
+        #textm {
+          max-width: 380px;
+          padding-right: 4rem;
+          border-bottom: 1px solid $white;
+          margin-bottom: 3.2rem;
+          color: $white;
+        }
+        .footer-btn {
+          left: 15rem;
+        }
+      }
+    }
+    .footer__top {
+      flex-direction: column;
+      gap: 2rem;
+      padding-top: 2rem;
+      .footer__top__nav {
+        gap: 2.5rem;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 375px) {
   .footer {
     .container {

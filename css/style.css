@@ -566,6 +566,80 @@ svg path:hover {
     max-width: 250px;
   }
 }
+@media only screen and (max-width: 400px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 380px;
+    width: 100%;
+  }
+  .header {
+    z-index: -1;
+    background-position: left -34.2rem top 12rem, bottom 13rem right -7rem;
+  }
+  .header .header__top {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+  .header .header__top .header__top__nav {
+    gap: 2.5rem;
+  }
+  .header .header__top .header__top__nav .header__top__link svg {
+    width: 19.6px;
+    height: 19.2px;
+  }
+  .header .hero {
+    position: relative;
+    top: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+    height: 244px;
+  }
+  .header .hero .hero__heading {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 1;
+    letter-spacing: -1.1px;
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+  .header .hero .hero__heading .table-br {
+    display: none;
+  }
+  .header .hero .hero__heading .table-br-first {
+    display: none;
+  }
+  .header .hero .hero__heading .desktop-br {
+    display: none;
+  }
+  .header .hero .hero__text {
+    width: 100%;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+  .header .hero .btn {
+    max-width: 120px;
+  }
+  .header .hero__img {
+    width: 100%;
+    max-width: 174px;
+    right: 10.3rem;
+    height: 383px;
+    background-color: rgba(217, 217, 217, 0.1);
+  }
+  .header .hero__img img {
+    max-width: 174px;
+    height: 242px;
+  }
+}
 @media only screen and (max-width: 375px) {
   .container {
     padding-left: 1.6rem;
@@ -759,6 +833,61 @@ svg path:hover {
   }
   .footer .footer__top {
     max-width: 807px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .footer {
+    background-position: top 45rem left -34.3rem;
+  }
+  .footer .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 380px;
+  }
+  .footer .form {
+    padding-left: 0;
+  }
+  .footer .form .form__content {
+    text-align: center;
+    max-width: 380px;
+    height: 138px;
+    margin-bottom: 5rem;
+  }
+  .footer .form .form__content h2 {
+    font-size: 3rem;
+    letter-spacing: -1.1px;
+  }
+  .footer .form .form__content p {
+    max-width: 380px;
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+  }
+  .footer .form form #name,
+  .footer .form form #email {
+    max-width: 380px;
+    padding-left: 2.4rem;
+    padding-right: 4rem;
+    height: 43px;
+    margin-bottom: 3.2rem;
+    border-bottom: 1px solid #ffffff;
+  }
+  .footer .form form #textm {
+    max-width: 380px;
+    padding-right: 4rem;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 3.2rem;
+    color: #ffffff;
+  }
+  .footer .form form .footer-btn {
+    left: 15rem;
+  }
+  .footer .footer__top {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+  .footer .footer__top .footer__top__nav {
+    gap: 2.5rem;
   }
 }
 @media only screen and (max-width: 375px) {
