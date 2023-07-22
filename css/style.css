@@ -465,6 +465,22 @@ svg path:hover {
   fill: #4ee1a0;
 }
 
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+    max-width: 900px;
+    padding: 5rem;
+    margin-bottom: 9rem;
+  }
+  .hero__img {
+    position: relative;
+    right: -8rem;
+  }
+  .hero__img img {
+    position: relative;
+    width: 400px;
+  }
+}
 @media only screen and (max-width: 812px) {
   .container {
     max-width: 807px;
@@ -501,6 +517,53 @@ svg path:hover {
   .header .hero__img img {
     max-width: 350px;
     height: 486px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .container {
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+  }
+  .header {
+    background-position: left -26.5rem top 16rem, bottom 6rem right -7rem;
+  }
+  .header .header__top {
+    justify-content: center;
+    gap: 17rem;
+    max-width: 700px;
+  }
+  .header .header__top .header__top__nav {
+    display: flex;
+    gap: 2rem;
+  }
+  .header .hero .hero__heading {
+    width: 100%;
+    max-width: 350px;
+    font-size: 4.8rem;
+    letter-spacing: -2px;
+  }
+  .header .hero .hero__heading .table-br {
+    display: block;
+  }
+  .header .hero .hero__heading .table-br-first {
+    display: block;
+  }
+  .header .hero .hero__heading .desktop-br {
+    display: none;
+  }
+  .header .hero__text {
+    max-width: 350px;
+  }
+  .header .hero__img {
+    width: 100%;
+    max-width: 250px;
+    height: 600px;
+    background-color: #242424;
+    right: 0;
+  }
+  .header .hero__img img {
+    max-width: 250px;
   }
 }
 @media only screen and (max-width: 375px) {
